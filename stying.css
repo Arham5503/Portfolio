@@ -1,0 +1,492 @@
+* {
+    font-family: serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    z-index: 1;
+
+}
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+ .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+    margin: 4px 0;
+  }
+nav {
+    width: 90%;
+    margin: auto;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+nav h1 {
+    flex-grow: 1;
+}
+
+ul {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+ul a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.first {
+    display: flex;
+    min-height: 90vh;
+    background-color: rgb(103, 252, 115);
+}
+
+.text {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 10%;
+    line-height: 1.5;
+}
+
+.img {
+    background-color: rgb(68, 247, 82);
+    display: flex;
+    justify-content: baseline;
+    /* border: 1px solid black; */
+    flex-grow: 1;
+    border-radius: 90% 90% 90% 90%;
+    object-fit: fill;
+    width: 100%;
+}
+
+.text h1 {
+    font-size: 2rem;
+}
+
+.text p {
+    font-size: 1.8rem;
+}
+
+.hire {
+    width: 200px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+    background: none;
+}
+.hire:hover{
+    border: none;
+    background-color: white;
+    transition: 0.8s;
+}
+
+.jss {
+    animation: myAnim 1s ease 0s 1 alternate forwards;
+}
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.scnd {
+    background: url("/pexels-pixabay-434337.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 120vh;
+    display: grid;
+    place-items: center;
+}
+.scnd-art {   
+    width: 80%;
+    min-height: 90vh;
+    margin: auto;
+    background: white;
+    margin: 50px auto;
+}
+.art {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.art h2 {
+    margin-top: 5%;
+    color: rgb(68, 247, 82);
+}
+
+.art p {
+    margin-top: 2%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 0 20px;
+}
+.resume-btn {
+    width: 170px;
+    height: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+    background-color: rgb(68, 247, 82);
+    border: none;
+    cursor: pointer;
+}
+.resume-btn:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.wd {
+    width: 90%;
+}
+
+.wdd {
+    width: 70%;
+}
+.ur {
+    width: 80%;
+}
+
+.ui {
+    width: 90%;
+}
+.container {
+            background-color: rgb(192, 192, 192);
+            width: 60%;
+            border-radius: 15px;
+        }
+        .skill {
+            background-color: rgba(6, 165, 40, 0.712);
+            color: white;
+            height: 15px;
+            text-align: right;
+            font-size: 12px;
+            border-radius: 15px;
+        }
+
+        .pp-div{
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .p-div{
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            flex-basis: 20rem;
+        }
+        .child-int{
+            margin-left: 10%;
+        }
+        .p-div :last-child{
+            margin-top: 10px;
+        }
+.child-int {
+    position: relative;
+    left: 5%;
+    flex-grow: 1;
+}
+.p-div label{
+    font-size: 1.3rem;
+}
+progress {
+    margin-top: 15px;
+}
+.scnd-p{
+    width: 95%;
+    margin: auto;
+}
+.scnd-p p {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.experty {
+    min-height: 100vh ;
+}
+
+.experty h1 {
+    margin-top: 80px;
+    text-align: center;
+    color: rgb(18, 231, 36);
+    font-size: 2rem;
+}
+
+.ex-parent {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 30px auto;
+    height: 51vh;
+
+}
+
+.child1 {
+    padding: 2rem;
+    width: 100%;
+    background-color: rgb(68, 247, 82);
+    flex-grow: 2;
+    flex-basis: 20rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.child1 p {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 3;
+}
+
+.child2 {
+    padding: 2rem;
+    flex-grow: 1;
+    flex-basis: 20rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.hidden {
+    display: none;
+}
+.child2 p {
+    font-size: 1.3rem;
+}
+.experience {
+    min-height: 100vh;
+    /* border: 1px solid black; */
+}
+
+.experience .h1 {
+    /* color: brown; */
+    font-size: 2.5rem;
+    margin-left: 2%;
+}
+
+.listt {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.child-list {
+    border: 1px solid rgba(49, 48, 48, 0.452);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.enterpernour {
+    background-color: rgb(68, 247, 82);
+}
+.my-img{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 90vh;
+}
+.bb {
+     flex-grow: 1;
+    flex-basis: 20rem;
+}
+
+.enter-img {
+    margin-top: 100px;
+}
+.enter-text{
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+.edu {
+    margin-top: 50px;
+    min-height: 90vh;
+}
+
+.edu .h1 {
+    font-size: 2.5rem;
+    margin-left: 2%;
+}
+.art-gallery{
+    display: flex;
+}
+.art{
+    flex-grow: 1;
+    width: 100%;
+}
+.art img{
+    width: 100%;
+}
+footer{
+    background-color: rgb(68, 247, 82); 
+ }
+ .texture{
+     word-spacing: 2px;
+     padding: 2rem 0;
+     text-align: center;
+     line-height: 1.5;
+     width: 80%;
+     margin: auto;
+     font-size: 1.5rem;
+     border-bottom: 2px solid rgba(49, 48, 48, 0.452);
+ }
+ .divv{
+     display: flex;
+     flex-wrap: wrap;
+     width: 80%;
+     margin: auto;
+ }
+ .drop-line{
+     margin-top: 40px;
+ }
+ .form{
+     margin-top: 40px;
+     display: flex;
+     flex-direction: column;
+     gap:10px;
+ }
+ .form input, textarea{
+     background: none;
+     border: none;
+     border-bottom: 2px solid rgba(49, 48, 48, 0.822);
+     outline: 0;
+     padding: 7px 0;
+ }
+ .contact{
+     position: relative;
+     left: 3%;
+     margin-top: 40px;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+ }
+ .form label{
+     font-size: 1.2rem;
+ }
+ .ds{
+     font-size: 1.2rem;
+ }
+ .bs{
+     font-size: 1.5rem;
+ }
+ .zz{
+     height: 50px;
+     width: 200px;
+     border: 1px solid black;
+}
+.zz:hover{
+ border: none;
+ background-color: white;
+ transition: 0.8s;
+}
+.send {
+margin-top: 20px;
+background-color: rgb(0, 0, 0);
+color: white;
+border: none;
+cursor: pointer;
+height: 45px;
+width: 180px;
+border:none;
+}
+.footerr p {
+text-align: center;
+padding: 1rem;
+}
+
+ @media screen and (max-width: 768px) {
+   header{
+     background-color: rgb(68, 247, 82);
+   }
+     .menu-toggle {
+     display: flex;
+   }
+   .menu {
+     width: 100%;
+     display: none;
+     flex-direction: column;
+     background-color: none;
+     position: absolute;
+     top: 60px;
+     z-index: 1;
+     text-align: center;
+     text-decoration: underline;
+     gap: 20px;
+     font-size: 1.5rem;
+   }
+   .menu.active {
+     display: flex;
+   }
+ }
+/************************************  Media Queries  *******************************************/
+@media screen and (max-width:874px) {
+    .img img {
+        display: none;
+    }
+    .experty {
+        min-height: 150vh ;
+    }
+    .enter-text{
+        font-size: 1.3rem;
+    }
+    .child1 p{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width:754px) {
+    .img {
+        display: none;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: unset;
+        text-align: center;
+    }
+    .b{
+        margin-left: 35px;
+    }
+    .experty {
+        min-height: 150vh ;
+    
+    }
+    
+    .enter-text{
+        padding: 3rem;
+        font-size: 1.3rem;
+    }
+    .child1 p{
+        font-size: 1.4rem;
+    }
+}

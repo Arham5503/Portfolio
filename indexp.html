@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="stying.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Portfolio</h1>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="first">
+            <div id="text" class="text">
+                <h1>Web Developer</h1>
+                <p>Front-end Developer and Desinger<br>GUI & GUX Designer</p>
+                <button class="hire" onclick="hire()">HIRE ME</button>
+            </div>
+            <div class="img">
+                <img src="/model.png" alt="">
+            </div>
+        </section>
+        <!-- About Section -->
+        <section id="about" class="scnd">
+            <div class="scnd-art">
+                <article class="art">
+                    <h2>About Myself</h2>
+                    <p>"I am Arham Ali, a dedicated front-end developer driven by a profound passion for crafting
+                        immersive digital experiences. With each line of code, I aim to redefine the boundaries of user
+                        interaction and visual design. Guided by the belief that every pixel tells a story, I weave
+                        together HTML, CSS, and JavaScript to breathe life into static screens, transforming them into
+                        dynamic canvases where innovation thrives."</p>
+                    <button class="resume-btn" onclick="busy()">DOWNLOAD RESUME</button>
+                </article>
+                <div class="pp-div">
+                    <div class="p-div">
+                        <div class="child-int">
+                            <Label for="user">USER REACHES</Label>
+                            <br>
+                            <div class="container">
+                                <div class="skill ur">80%</div>
+                            </div>
+                        </div>
+                        <div class="child-int">
+                            <Label for="UI">UI DESIGN</Label>
+                            <br>
+                            <div class="container">
+                                <div class="skill ui">90%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-div">
+                        <div class="child-int b">
+                            <Label for="WEB">WEB DEVELOPMENT</Label>
+                            <br>
+                            <div class="container">
+                                <div class="skill wd">90%</div>
+                            </div>
+                        </div>
+                        <div class="child-int">
+                            <Label for="WEBB">WEB DESIGN</Label>
+                            <br>
+                            <div class="container">
+                                <div class="skill wdd">70%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scnd-p">
+                    <p> Inspired by Steve Jobs' philosophy that 'Design is
+                        how it works,' I relentlessly pursue excellence, creating interfaces that are both visually
+                        stunning and intuitively functional, leaving an indelible mark on users' digital journeys.
+                        Feel free to adjust the content to better align with your personal style and preferences!</p>
+                </div>
+            </div>
+        </section>
+        <!-- Expertise Section -->
+        <section id="services" class="experty">
+            <h1>My Experties</h1>
+            <div class="ex-parent">
+                <div class="child1">
+                    <!-- Add click events to toggle content -->
+                    <p class="ab" onclick="toggleContent('p1')">Front-end Development</p>
+                    <p class="ab" onclick="toggleContent('p2')">User Experience Design</p>
+                    <p class="ab" onclick="toggleContent('p3')">UI/UX Prototyping</p>
+                </div>
+                <div class="child2">
+                    <!-- Content to be toggled -->
+                    <p class="jss p1">
+                        Proficient in HTML, CSS, and JavaScript, I specialize in translating design concepts into
+                        responsive and interactive web interfaces.
+                    </p>
+                    <p class="jss p2 hidden">
+                        With a strong understanding of user behavior and interface design principles, I ensure that
+                        every project I work on delivers an intuitive and engaging user experience.
+                    </p>
+                    <p class="jss p3 hidden">
+                        Skilled in creating wireframes and prototypes using tools like Figma and Adobe XD to visualize
+                        and iterate on design concepts.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Experience Section -->
+        <section class="experience">
+            <p class="h1">Experience</p>
+            <div class="listt">
+                <div style="border-top: 1px solid rgba(49, 48, 48, 0.452);" class="child-list">
+                    <h1>Freelance Web Developer (2021-2022):</h1>
+                    <p>Worked with various clients to create custom websites tailored to their specific needs. Managed
+                        multiple projects simultaneously, from initial concept to final delivery, ensuring timely
+                        completion and client satisfaction.</p>
+                </div>
+                <div class="child-list">
+                    <h1>Front-end Developer | XYZ Tech Solutions (2022-Present)</h1>
+                    <p>Collaborated with cross-functional teams to develop responsive web applications, focusing on
+                        clean code and optimal user experience. Implemented new features and optimized existing code to
+                        enhance performance and usability.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Random Section -->
+        <section class="enterpernour">
+            <div class="my-img">
+                <div class="bb enter-img">
+                    <img style="width: 100%; height: 100%; object-fit: fill;" src="/Control-V (45).png" alt="">
+                </div>
+                <div class="bb enter-text">
+                    <p>"Crafting digital experiences with innovation and precision, our web development expertise
+                        transforms ideas into immersive realities. Seamlessly blending creativity with cutting-edge
+                        technology, we sculpt intuitive interfaces that captivate and engage users."</p>
+                </div>
+            </div>
+        </section>
+        <!-- Education Section -->
+        <section class="edu">
+            <p class="h1">Education</p>
+            <div class="listt">
+                <div style="border-top: 1px solid rgba(49, 48, 48, 0.452);" class="child-list">
+                    <h1>Associate Degree in Computer Science</h1>
+                    <p> Associate Degree in Computer Science from the University of Central Punjab. Graduated with a
+                        solid foundation in computer science fundamentals, including data structures, algorithms, and
+                        software engineering principles. Gained hands-on experience in web development, honing my skills
+                        in front-end technologies and design principles.</p>
+                </div>
+                <div class="child-list">
+                    <h1>Intermediate</h1>
+                    <p>Intermediate in Engineering from Government Post Graduate College, Pattoki: Equipped with a
+                        comprehensive understanding of engineering principles and concepts, including mathematics,
+                        physics, and technical drawing. This educational journey provided a strong foundation for
+                        pursuing higher studies and developing problem-solving skills essential for engineering
+                        disciplines.</p>
+                </div>
+
+        </section>
+        <section class="base">
+            <div class="art-gallery">
+                <div class="art"><img src="/collection (1).jpg" alt=""></div>
+                <div class="art"><img src="/collection (2).jpg" alt=""></div>
+                <div class="art"><img src="/collection (3).jpg" alt=""></div>
+                <div class="art"><img src="/collection (4).jpg" alt=""></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="texture">
+            <p>I'm a designner based in Pakistan. Currently a freelancer.You can see my hobbies on @webmaster252 and
+                some photos on me too.</p>
+        </div>
+        <div class="divv">
+            <div class="bb drop-line">
+                <p class="bs">DROP A LINE</p>
+                <form class="form" action="">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="">Email</label>
+                    <input type="text" name="name" required>
+                    <label for="msg">Message</label>
+                    <textarea name="msg" id="" cols="30" rows="5"></textarea>
+                    <button class="send">Send Message</button>
+                </form>
+            </div>
+            <div id="contact" class="bb contact">
+                <p class="bs">CONTACT ME</p>
+                <p class="ds">Pattoki (Kasur),Punjab</p>
+                <p class="ds">+923274179182</p>
+                <a class="ds" style="text-decoration: none; color: black;"
+                    href="mailto: arhamali4510@gmail.com">arhamali4510@gmail.com</a>
+                <button class="zz resume-btn" onclick="busy()">DOWNLOAD RESUME</button>
+            </div>
+        </div>
+        <div class="footerr">
+            <p>All Right Reserved &copy 2023</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript function to toggle content visibility
+        function toggleContent(className) {
+            var elements = document.querySelectorAll('.child2 > p');
+            elements.forEach(function (element) {
+                element.classList.add('hidden');
+            });
+
+            var selectedElements = document.querySelectorAll('.' + className);
+            selectedElements.forEach(function (element) {
+                element.classList.remove('hidden');
+            });
+        }
+
+
+
+
+        const busy = () => {
+            window.open('cv.html');
+        }
+        const hire = () => {
+            window.open('https://www.fiverr.com/s/R5Q6x8', '_blank');
+        }
+
+        // This script toggles the 'active' class when the menu-toggle is clicked
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            document.querySelector('#text').style.marginTop = '20%';
+        });
+
+        // Add this script to close the menu when an item is clicked
+        const menuItems = document.querySelectorAll('.menu a');
+
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                menu.classList.remove('active');
+                document.querySelector('#text').style.marginTop = '-20%';
+            });
+        });
+    </script>
+</body>
+</html>
